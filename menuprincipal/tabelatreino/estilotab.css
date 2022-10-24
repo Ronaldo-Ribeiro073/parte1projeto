@@ -1,0 +1,40 @@
+
+
+#tbvariavel {
+    font: 20px Verdana;
+    color: rgb(242, 238, 245);
+}
+
+#dGridvariavel {
+    color: rgb(242, 238, 245);
+    width: 959px;
+    margin-left: -0.0%;
+}
+
+select {
+    width: 280px;
+    height: 38px;
+}
+
+input[type=button] {
+    color: black;
+    width: 180px;
+    height: 48px;
+}
+body{
+background-image: url(fundotreino.jpg) ;
+
+
+}
+
+#fvariavel {
+    
+    color: rgb(242, 238, 245);
+    width: 955px;
+    margin-left: 25%;
+    margin-top: 3%;
+}
+
+tr:hover {
+    cursor: pointer;
+}

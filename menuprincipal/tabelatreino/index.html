@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Educação Virtual</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilotab.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript" src="tabela.js"></script>
+    <link rel="shortcut icon" href="icon.png">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="lh-100">
+            <h6 class="mb-0 text-white lh-100">MyTrain</h6>
+            <small class="text-white">Inovação e Qualidade de Vida</small>
+        </div>
+    </nav>
+
+    <div id="fvariavel">
+        <form>
+            <div class="form-group">
+                <label for="txtordem">Ordem</label>
+                <input type="text" class="form-control" id="txtordem" aria-describedby="emailHelp" placeholder="Ordem"
+                    readonly>
+            </div>
+            <div class="form-group">
+                <label for="txtexercicio">Exercicio</label>
+                <input type="text" class="form-control" id="txtexercicio" aria-describedby="emailHelp"
+                    placeholder="Exercicio">
+            </div>
+            <div class="form-group">
+                <label for="txtcarga">Carga</label>
+                <input type="text" class="form-control" id="txtcarga" placeholder="Carga">
+            </div>
+            <div class="form-group">
+                <label for="txtseries">Series</label>
+                <input type="text" class="form-control" id="txtseries" placeholder="Series">
+            </div>
+
+            <div class="form-group">
+                <label for="txtrepeticoes">Repetiçoes</label>
+
+                <input type="text" class="form-control" id="txtrepeticoes" placeholder="Repetiçoes">
+
+                <div class="form-group">
+                    <label for="txtintervalo">Intervalo</label>
+                    <input type="text" class="form-control" id="txtintervalo" placeholder="Intervalo">
+                </div>
+
+                <button type="button" class="btn btn-dark btn-lg"
+                    onclick="cadtreino(txtexercicio.value, txtcarga.value, txtseries.value, txtrepeticoes.value, txtintervalo.value)">
+                    Inserir
+                </button>
+                <button type="button" class="btn btn-dark btn-lg"
+                    onclick="alttreino(txtexercicio.value, txtcarga.value, txtseries.value, txtrepeticoes.value, txtintervalo.value)">
+                    Salvar
+                </button>
+                <button type="button" class="btn btn-dark btn-lg" onclick="apagarregistro()">
+                    Excluir
+                </button>
+                <button type="button" class="btn btn-dark btn-lg" onclick="tableToCSV()">Baixar</button>
+                
+        </form>
+    </div>
+
+    <div id="dGridvariavel">
+
+       
+        <table id="tbvariavel" class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th >Ordem</th>
+                    <th >Exercicio</th>
+                    <th >Carga</th>
+                    <th >Series</th>
+                    <th >Repetiçoes</th>
+                    <th >Intervalo</th>
+                </tr>
+            </thead>
+        </table>
+
+    </div>
+    
+        
+        
+        
+  
+    </body>
+
+</html>

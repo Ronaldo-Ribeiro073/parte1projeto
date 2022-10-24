@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Educação Virtual</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dieta.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript" src="jsd.js"></script>
+    <link rel="shortcut icon" href="icon.png">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="lh-100">
+            <h6 class="mb-0 text-white lh-100">MyTrain</h6>
+            <small class="text-white">Inovação e Qualidade de Vida</small>
+        </div>
+    </nav>
+
+    <div id="fvariavel">
+        <form>
+            <div class="form-group">
+                <label for="txtordem">Dia da Semana</label>
+                <input type="text" class="form-control" id="txtordem"  placeholder="Dia da Semana">
+            </div>
+            <div class="form-group">
+                <label for="txtexercicio">Café da manhã</label>
+                <input type="text" class="form-control" id="txtexercicio" 
+                    placeholder="Café da manhã">
+            </div>
+            <div class="form-group">
+                <label for="txtcarga">Lanche 1</label>
+                <input type="text" class="form-control" id="txtcarga" placeholder="Lanche 1">
+            </div>
+            <div class="form-group">
+                <label for="txtseries">Almoço</label>
+                <input type="text" class="form-control" id="txtseries" placeholder="Almoço">
+            </div>
+
+            <div class="form-group">
+                <label for="txtrepeticoes">Lanche 2</label>
+
+                <input type="text" class="form-control" id="txtrepeticoes" placeholder="Lanche 2">
+
+                <div class="form-group">
+                    <label for="txtintervalo">Jantar</label>
+                    <input type="text" class="form-control" id="txtintervalo" placeholder="Jantar">
+                </div>
+                <div class="form-group">
+                    <label for="txtlanche3">Lanche 3</label>
+                    <input type="text" class="form-control" id="txtlanche3" placeholder="Lanche 3">
+                </div>
+
+                <button type="button" class="btn btn-dark btn-lg"
+                    onclick="cadtreino(txtordem.value, txtexercicio.value, txtcarga.value, txtseries.value, txtrepeticoes.value, txtintervalo.value, txtlanche3.value)">
+                    Inserir
+                </button>
+                <button type="button" class="btn btn-dark btn-lg"
+                    onclick="alttreino(txtordem.value,txtexercicio.value, txtcarga.value, txtseries.value, txtrepeticoes.value, txtintervalo.value, txtlanche3.value)">
+                    Salvar
+                </button>
+                <button type="button" class="btn btn-dark btn-lg" onclick="apagarregistro()">
+                    Excluir
+                </button>
+                <button type="button" class="btn btn-dark btn-lg" onclick="tableToCSV()">Baixar</button>
+                
+        </form>
+    </div>
+
+    <div id="dGridvariavel">
+
+       
+        <table id="tbvariavel" class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th >Dia da Semana</th>
+                    <th >Cafe da manhã</th>
+                    <th >Lanche 1</th>
+                    <th >Almoço</th>
+                    <th >Lanche 2</th>
+                    <th >Jantar</th>
+                    <th >Lanche 3</th>
+                </tr>
+            </thead>
+        </table>
+
+    </div>
+    
+        
+        
+        
+  
+    </body>
+
+</html>
