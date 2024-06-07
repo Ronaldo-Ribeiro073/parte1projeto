@@ -1,90 +1,135 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>Navbar</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="icon.png">
-  </head>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaço Andréa Mendes</title>
+    <link rel="stylesheet" href="Andrea Mendes Salão.css">
+    <style>
+        /* Estilo da galeria de imagens */
+        .galeria-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Define três colunas de largura igual */
+            gap: 15px; /* Espaçamento entre as imagens */
+            padding: 20px;
+        }
 
-  <body>
-    
+        .galeria-container img {
+            width: 100%; /* Garante que as imagens ocupem 100% da largura das colunas */
+            height: auto; /* Mantém a proporção das imagens */
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .galeria-container img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
     <header>
-      <nav>
-        <a class="logo" href="/">My Train</a>
-        <div class="mobile-menu">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-        <ul class="nav-list">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Objetivo</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="./hipertrofia/hiper.html">Hipertrofia</a>
-              <a class="dropdown-item" href="./emagrecimento/emagre.html">Resistencia</a>
-              <a class="dropdown-item" href="./resistencia/resi.html">Emagrecimento</a>
-            </div>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Monte Voçê</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="./tabelatreino/index.html">Treino</a>
-              <a class="dropdown-item" href="./tabeladieta/indexd.html">Dieta</a>
-            </div>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Suplementos</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="./uei/indext.html">Whey Protein</a>
-                
-                
-              </div>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ergogênicos</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item " href="./durateston/index.html">Durateston</a>
-                  
-                  
-                </div>
-        </ul>
-      </nav>
-      
+        <img class="header-image" src="https://github.com/Ronaldo-Ribeiro073/Salao-Andrea-Mendes/blob/main/Logo%20Sal%C3%A3o%20de%20Beleza.jpeg?raw=true" alt="Logo Espaço Andréa Mendes">
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#missao">Missão</a></li>
+                <li><a href="#visao">Visão</a></li>
+                <li><a href="#valores">Valores</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#localizacao">Localização</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item carousel-image bg-img-1 active">
-          
-        </div>
-        <div class="carousel-item carousel-image bg-img-2">
-         
-        </div>
-        <div class="carousel-item carousel-image bg-img-3">
-          
-        </div>
-        <div class="carousel-item carousel-image bg-img-4">
-         
-        </div>
-      </div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"></script>
+    <section id="sobre">
+        <h2>Sobre</h2>
+        <p>“O Espaço Andréa Mendes reflete o meu compromisso apaixonado em realçar a beleza e autoestima de cada cliente, atentando a cada detalhe. Iniciei este negócio com o propósito de oferecer serviços de beleza e criar um ambiente onde o cuidado pessoal de cada cliente se converta em uma experiência de renovação e transformação. Queremos que nossos clientes não apenas valorizem a estética, mas também apreciem a atenção personalizada, a qualidade dos serviços e o ambiente acolhedor que proporcionamos.” – Andréa Mendes</p>
+    </section>
+
+    <section id="missao">
+        <h2>Missão</h2>
+        <p>Nossa missão é proporcionar aos nossos clientes uma experiência de beleza, bem-estar e a atenção individualizada. Nosso diferencial está na combinação de qualidade, preços competitivos, atendimento focado no cliente e na busca contínua pela excelência, inovação e satisfação. Nosso compromisso com cada cliente é a nossa prioridade.</p>
+    </section>
+
+    <section id="visao">
+        <h2>Visão</h2>
+        <p>O Espaço Andréa Mendes é mais do que um local para cuidar da aparência física; é um refúgio para se sentir acolhido e elevar sua autoestima. Proporcionar a todos a sensação de serem verdadeiramente especiais, esplêndidos, admiráveis e confiantes, em um ambiente acolhedor, com um cuidado personalizado.</p>
+    </section>
+
+    <section id="valores">
+        <h2>Valores</h2>
+        <ul>
+            <li><strong>Excelência:</strong> Buscamos a excelência em cada aspecto do nosso negócio. Investimos em capacitação profissional e produtos de qualidade para fornecer serviços de qualidade e a satisfação de nossos clientes.</li>
+            <li><strong>Compromisso com o Cliente:</strong> Desde o momento em que o cliente entra em nosso salão, nos empenhamos em alcançar suas expectativas. Cada cliente é recebido com atenção e cuidado individualizado. Nosso compromisso vai além de simplesmente satisfazer; buscamos trabalhar com integridade e profissionalismo e conquistar a confiança, de nossos clientes, proporcionando-lhes uma experiência única.</li>
+            <li><strong>Integridade:</strong> Agimos com honestidade, transparência e ética em todas as nossas interações com clientes e fornecedores. Construímos confiança e fidelidade.</li>
+            <li><strong>Inovação:</strong> Buscamos constantemente novas formas de aprimorar nossos serviços, mantendo-nos atualizados com as tendências mais recentes do setor. Investimos em capacitação profissional, produtos de alta qualidade e tecnologia. Dessa forma, garantimos que nossos clientes tenham acesso aos tratamentos com serviços e produtos inovadores.</li>
+        </ul>
+    </section>
+
+    <section id="servicos">
+        <h2>Serviços Oferecidos</h2>
+        <ul>
+            <li>Corte, coloração e estilização de cabelo</li>
+            <li>Tratamentos estéticos</li>
+            <li>Manicure e pedicure e spa dos pés</li>
+            <li>Maquiagem profissional e design de sobrancelha</li>
+            <li>Massagem modeladora e relaxante</li>
+            <li>Venda de produtos de beleza</li>
+        </ul>
+    </section>
     
-    <div id="textocentro">
-      <h1>Deseja atendimento para acompanhamento com os melhores profissionais?</h1>
-      <br>      
-    </div>   
-    <div id="centralizar"><a href="https://api.whatsapp.com/send?phone=5585996605866&text=Ola%2C%20Responderemos%20assim%20que%20possivel%2C%20seja%20bem%20vindo%2C%20e%20conhe%C3%A7a%20os%20melhores%20profissionais%20para%20te%20ajudar!%20%F0%9F%A4%9E%F0%9F%92%AA%F0%9F%8F%8B%EF%B8%8F%E2%80%8D%E2%99%80%E2%80%8D"><button type="button" class="btn btn-primary btn-lg">Fale Conosco</button></a></div>
-   
-    
-    <script src="navegacao.js"></script>
-  </body>
+    <section id="galeria">
+        <h2>Galeria de Imagens</h2>
+        <div class="galeria-container">
+ <ul><li><img src="https://github.com/Ronaldo-Ribeiro073/Salao-Andrea-Mendes/blob/main/Unhas/UNHA%201.jpg?raw=true" alt="UNHA1"> </li>
+    <li><img src="https://github.com/Ronaldo-Ribeiro073/Salao-Andrea-Mendes/blob/main/Unhas/UNHA%202.jpg?raw=true" alt="UNHA2"> </li>
+    <li><img src="https://github.com/Ronaldo-Ribeiro073/Salao-Andrea-Mendes/blob/main/Unhas/UNHA3.jpg?raw=true" alt="UNHA3"> </li>
+    <li><img src="https://github.com/Ronaldo-Ribeiro073/Salao-Andrea-Mendes/blob/main/Unhas/UNHA%204.jpg?raw=true" alt="UNHA4"> </li>
+    <li><img src="https://github.com/Ronaldo-Ribeiro073/Salao-Andrea-Mendes/blob/main/Unhas/Unha5.jpeg?raw=true" alt="UNHA5"> </li>
+    <li><img src="https://github.com/Ronaldo-Ribeiro073/Salao-Andrea-Mendes/blob/main/Unhas/UNHA%206.jpg?raw=true" alt="UNHA6"> </li>
+    <li><img src="https://github.com/Ronaldo-Ribeiro073/Salao-Andrea-Mendes/blob/main/Unhas/unha%207.jpg?raw=true" alt="UNHA7"> </li>
+    <li><img src="https://github.com/Ronaldo-Ribeiro073/Salao-Andrea-Mendes/blob/main/Unhas/unha8.jpg?raw=true" alt="UNHA8"> </li> 
+    <li><img src="https://github.com/Ronaldo-Ribeiro073/Salao-Andrea-Mendes/blob/main/Unhas/unha%209.jpg?raw=true" alt="UNHA9"> </li> 
+    <li><img src="https://github.com/Ronaldo-Ribeiro073/Salao-Andrea-Mendes/blob/main/Unhas/unha10.jpg?raw=true" alt="UNHA10"> </li> 
+</ul>
+
+ <ul> 
+ <li><img src="https://github.com/Ronaldo-Ribeiro073/Salao-Andrea-Mendes/blob/main/Cabelos/Cabelo1.jpeg?raw=true" alt="Cabelo1">  </li>
+ <li><img src="https://github.com/Ronaldo-Ribeiro073/Salao-Andrea-Mendes/blob/main/Cabelos/cabelo2.jpg?raw=true" alt="Cabelo2"> </li>
+ <li><img src="https://github.com/Ronaldo-Ribeiro073/Salao-Andrea-Mendes/blob/main/Cabelos/cabelo3.jpg?raw=true" alt="Cabelo3"> </li>
+  
+</ul>
+ <ul>
+<li> <img src="https://github.com/Ronaldo-Ribeiro073/Salao-Andrea-Mendes/blob/main/Massagem/massagem%201.jpg?raw=true" alt="Massagem1"></li>
+ <li><img src="https://github.com/Ronaldo-Ribeiro073/Salao-Andrea-Mendes/blob/main/Massagem/massagem3.jpg?raw=true" alt="Massagem3"></li>
+<li><img src="https://github.com/Ronaldo-Ribeiro073/Salao-Andrea-Mendes/blob/main/Massagem/massagem2.jpg?raw=true" alt="Massagem2"></li> 
+</ul>
+ <!-- Adicione mais imagens conforme necessário -->
+        </div>
+    </section>
+
+    <section id="localizacao">
+        <h2>Localização</h2>
+        <p>Rua Platina, 174, Major Lage de Baixo</p>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Telefone: (31) 987521476 <br>E-mail: andreasalao@gmail.com</p>
+    </section>
+
+    <section id="social-links">
+        <h2>Nossas Redes Sociais</h2>
+        <a href="https://instagram.com" target="_blank"><img src="icons/instagram.png" alt="Instagram"></a>
+        <p><a href="https://instagram.com">Acompanhe-nos no Instagram</a></p>
+        <a href="https://twitter.com" target="_blank"><img src="icons/twitter.png" alt="Whatsapp"></a>
+        <p><a href="#sobre">Acompanhe-nos no Whatsapp</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Espaço Andréa Mendes</p>
+    </footer>
+</body>
 </html>
